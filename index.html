@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Kannavi | Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: '#0b0c10',
+                        neonblue: '#45f3ff',
+                        emeraldgreen: '#66fcf1',
+                        darkgray: '#1f2833',
+                        lightgray: '#c5c6c7'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                        serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-charcoal text-lightgray font-sans antialiased flex flex-col min-h-screen relative">
+    <nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-neonblue/20 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-white tracking-wider glow-text">AK<span class="text-emeraldgreen">.</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-neonblue px-3 py-2 rounded-md font-medium font-mono">Home</a>
+                        <a href="about.html" class="text-lightgray hover:text-emeraldgreen transition-colors px-3 py-2 rounded-md font-medium font-mono">About</a>
+                        <a href="projects.html" class="text-lightgray hover:text-emeraldgreen transition-colors px-3 py-2 rounded-md font-medium font-mono">Projects</a>
+                        <a href="poetry.html" class="text-lightgray hover:text-emeraldgreen transition-colors px-3 py-2 rounded-md font-medium font-mono">Poetry</a>
+                        <a href="contact.html" class="text-lightgray hover:text-emeraldgreen transition-colors px-3 py-2 rounded-md font-medium font-mono">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-lightgray hover:text-white hover:bg-darkgray focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="md:hidden hidden bg-charcoal border-b border-neonblue/20" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="index.html" class="text-neonblue block px-3 py-2 rounded-md text-base font-medium font-mono">Home</a>
+                <a href="about.html" class="text-lightgray hover:text-emeraldgreen block px-3 py-2 rounded-md text-base font-medium font-mono">About</a>
+                <a href="projects.html" class="text-lightgray hover:text-emeraldgreen block px-3 py-2 rounded-md text-base font-medium font-mono">Projects</a>
+                <a href="poetry.html" class="text-lightgray hover:text-emeraldgreen block px-3 py-2 rounded-md text-base font-medium font-mono">Poetry</a>
+                <a href="contact.html" class="text-lightgray hover:text-emeraldgreen block px-3 py-2 rounded-md text-base font-medium font-mono">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center pt-20 relative overflow-hidden">
+        <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-neonblue/5 rounded-full blur-3xl mix-blend-screen opacity-50"></div>
+        <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emeraldgreen/5 rounded-full blur-3xl mix-blend-screen opacity-50"></div>
+        
+        <!-- Corner Avatar Picture (Top Left) -->
+        <div class="absolute top-28 left-8 lg:left-16 lg:top-32 z-20 hidden md:block group">
+            <div class="absolute -inset-1 bg-gradient-to-tr from-neonblue to-emeraldgreen rounded-full blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+            <img src="profile.jpg" alt="Profile" class="relative w-32 h-32 lg:w-40 lg:h-40 object-cover rounded-full border border-neonblue/30 shadow-[0_0_15px_rgba(69,243,255,0.2)] grayscale hover:grayscale-0 transition-all duration-500">
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h2 class="text-emeraldgreen font-mono text-lg md:text-xl mb-4 tracking-widest uppercase">Hello, World! I am</h2>
+            <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 tracking-tight">
+                Ahmed <span class="text-transparent bg-clip-text bg-gradient-to-r from-neonblue to-emeraldgreen glow-text">Kannavi</span>
+            </h1>
+            <div class="text-2xl md:text-3xl text-lightgray font-light h-12 flex items-center justify-center mt-8">
+                <span class="mr-2 text-neonblue">&gt;</span>
+                <span id="typing-text" class="text-white font-mono"></span><span class="typewriter-cursor"></span>
+            </div>
+            
+            <div class="mt-16 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 items-center">
+                <a href="projects.html" class="px-8 py-3 rounded-md bg-transparent border border-emeraldgreen text-emeraldgreen hover:bg-emeraldgreen/10 transition-all duration-300 font-semibold font-mono flex items-center shadow-[0_0_15px_rgba(102,252,241,0.2)] hover:shadow-[0_0_20px_rgba(102,252,241,0.4)]">
+                    <i class="fas fa-code mr-3"></i> View Projects
+                </a>
+                <a href="contact.html" class="px-8 py-3 rounded-md bg-darkgray/50 border border-darkgray text-white hover:border-neonblue hover:text-neonblue transition-all duration-300 font-semibold font-mono flex items-center">
+                    Let's Talk <i class="fas fa-arrow-right ml-3"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="bg-charcoal/80 border-t border-darkgray py-6 mt-auto relative z-10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 font-mono">
+            <p>&copy; 2026 Ahmed Kannavi. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="https://github.com/Ahmetkannavi" target="_blank" class="hover:text-neonblue transition-colors"><i class="fab fa-github text-xl"></i></a>
+                <a href="#" class="hover:text-neonblue transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="https://instagram.com/ah2tk" target="_blank" class="hover:text-neonblue transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

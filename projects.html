@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Kannavi | Projects</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: '#0b0c10',
+                        neonblue: '#45f3ff',
+                        emeraldgreen: '#66fcf1',
+                        darkgray: '#1f2833',
+                        lightgray: '#c5c6c7'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                        serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-charcoal text-lightgray font-sans antialiased flex flex-col min-h-screen relative">
+    <nav class="fixed w-full z-50 bg-charcoal/90 backdrop-blur-md border-b border-neonblue/20 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold text-white tracking-wider glow-text">AK<span class="text-emeraldgreen">.</span></a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-lightgray hover:text-emeraldgreen transition-colors px-3 py-2 rounded-md font-medium font-mono">Home</a>
+                        <a href="about.html" class="text-lightgray hover:text-emeraldgreen transition-colors px-3 py-2 rounded-md font-medium font-mono">About</a>
+                        <a href="projects.html" class="text-neonblue px-3 py-2 rounded-md font-medium font-mono border-b-2 border-neonblue pb-1">Projects</a>
+                        <a href="poetry.html" class="text-lightgray hover:text-emeraldgreen transition-colors px-3 py-2 rounded-md font-medium font-mono">Poetry</a>
+                        <a href="contact.html" class="text-lightgray hover:text-emeraldgreen transition-colors px-3 py-2 rounded-md font-medium font-mono">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 rounded-md text-lightgray hover:text-white hover:bg-darkgray focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="md:hidden hidden bg-charcoal border-b border-neonblue/20" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="index.html" class="text-lightgray hover:text-emeraldgreen block px-3 py-2 rounded-md text-base font-medium font-mono">Home</a>
+                <a href="about.html" class="text-lightgray hover:text-emeraldgreen block px-3 py-2 rounded-md text-base font-medium font-mono">About</a>
+                <a href="projects.html" class="text-neonblue block px-3 py-2 rounded-md text-base font-medium font-mono">Projects</a>
+                <a href="poetry.html" class="text-lightgray hover:text-emeraldgreen block px-3 py-2 rounded-md text-base font-medium font-mono">Poetry</a>
+                <a href="contact.html" class="text-lightgray hover:text-emeraldgreen block px-3 py-2 rounded-md text-base font-medium font-mono">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-20 relative px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="flex items-center justify-start mb-16">
+                <h1 class="text-4xl md:text-5xl font-bold text-white tracking-tight"><span class="text-emeraldgreen font-mono text-3xl md:text-4xl mr-4">02.</span>Selected Works</h1>
+                <div class="hidden sm:block h-px bg-darkgray flex-grow ml-8 max-w-sm"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Project 1 -->
+                <div class="cyberpunk-card rounded-xl overflow-hidden flex flex-col h-full group bg-darkgray/40 border border-darkgray hover:border-emeraldgreen/50">
+                    <div class="h-52 bg-[#0d131a] relative overflow-hidden flex flex-col items-center justify-center border-b border-darkgray">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1555949963-aa79dcee981c?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-20 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent z-10"></div>
+                        <div class="z-20 transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <i class="fas fa-shield-alt text-5xl text-emeraldgreen/50 group-hover:text-emeraldgreen transition-colors duration-300 drop-shadow-[0_0_10px_rgba(102,252,241,0.5)]"></i>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col z-20 -mt-6 bg-transparent relative">
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-emeraldgreen transition-colors mt-2">AI Fraud Detection</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/Ahmetkannavi" target="_blank" class="text-lightgray hover:text-neonblue transition-colors bg-charcoal p-2 rounded-full border border-darkgray hover:border-neonblue"><i class="fab fa-github text-xl"></i></a>
+                                <a href="#" class="text-lightgray hover:text-neonblue transition-colors bg-charcoal p-2 rounded-full border border-darkgray hover:border-neonblue"><i class="fas fa-external-link-alt text-lg"></i></a>
+                            </div>
+                        </div>
+                        <p class="text-lightgray text-sm mb-8 flex-grow font-light leading-relaxed">
+                            A machine learning model designed to identify and prevent fraudulent transactions in real-time. Built using Python, Scikit-learn, and integrated tightly with an Android client for live transaction monitoring and alerts.
+                        </p>
+                        <div class="flex flex-wrap gap-3 text-xs font-mono text-emeraldgreen/80">
+                            <span class="bg-charcoal px-3 py-1 rounded border border-darkgray">Python</span>
+                            <span class="bg-charcoal px-3 py-1 rounded border border-darkgray">Scikit-Learn</span>
+                            <span class="bg-charcoal px-3 py-1 rounded border border-darkgray">Kotlin</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="cyberpunk-card rounded-xl overflow-hidden flex flex-col h-full group bg-darkgray/40 border border-darkgray hover:border-neonblue/50">
+                    <div class="h-52 bg-[#0d131a] relative overflow-hidden flex flex-col items-center justify-center border-b border-darkgray">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-20 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent z-10"></div>
+                        <div class="z-20 transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <i class="fas fa-mobile-alt text-5xl text-neonblue/50 group-hover:text-neonblue transition-colors duration-300 drop-shadow-[0_0_10px_rgba(69,243,255,0.5)]"></i>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col z-20 -mt-6 bg-transparent relative">
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-neonblue transition-colors mt-2">Uni Schedule Sync</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/Ahmetkannavi" target="_blank" class="text-lightgray hover:text-emeraldgreen transition-colors bg-charcoal p-2 rounded-full border border-darkgray hover:border-emeraldgreen"><i class="fab fa-github text-xl"></i></a>
+                            </div>
+                        </div>
+                        <p class="text-lightgray text-sm mb-8 flex-grow font-light leading-relaxed">
+                            An intuitive Android application tailored for university students. It seamlessly manages course schedules, assignment deadlines, and utilizes background services to push timely campus notifications.
+                        </p>
+                        <div class="flex flex-wrap gap-3 text-xs font-mono text-neonblue/80">
+                            <span class="bg-charcoal px-3 py-1 rounded border border-darkgray">Android SDK</span>
+                            <span class="bg-charcoal px-3 py-1 rounded border border-darkgray">Java</span>
+                            <span class="bg-charcoal px-3 py-1 rounded border border-darkgray">Firebase</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="cyberpunk-card rounded-xl overflow-hidden flex flex-col h-full group bg-darkgray/40 border border-darkgray hover:border-emeraldgreen/50">
+                    <div class="h-52 bg-[#0d131a] relative overflow-hidden flex flex-col items-center justify-center border-b border-darkgray">
+                        <div class="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop')] bg-cover bg-center mix-blend-overlay opacity-20 group-hover:opacity-40 group-hover:scale-105 transition-all duration-700"></div>
+                        <div class="absolute inset-0 bg-gradient-to-t from-charcoal/80 to-transparent z-10"></div>
+                        <div class="z-20 transform group-hover:-translate-y-2 transition-transform duration-500">
+                            <i class="fas fa-brain text-5xl text-emeraldgreen/50 group-hover:text-emeraldgreen transition-colors duration-300 drop-shadow-[0_0_10px_rgba(102,252,241,0.5)]"></i>
+                        </div>
+                    </div>
+                    <div class="p-8 flex-grow flex flex-col z-20 -mt-6 bg-transparent relative">
+                        <div class="flex justify-between items-start mb-6">
+                            <h3 class="text-2xl font-bold text-white group-hover:text-emeraldgreen transition-colors mt-2">Emotion Recognition</h3>
+                            <div class="flex space-x-4">
+                                <a href="https://github.com/Ahmetkannavi" target="_blank" class="text-lightgray hover:text-neonblue transition-colors bg-charcoal p-2 rounded-full border border-darkgray hover:border-neonblue"><i class="fab fa-github text-xl"></i></a>
+                            </div>
+                        </div>
+                        <p class="text-lightgray text-sm mb-8 flex-grow font-light leading-relaxed">
+                            A deep learning vision model that classifies human emotion from facial expressions in video feeds. Uses a custom convolutional neural network (CNN) trained on diverse open-source datasets.
+                        </p>
+                        <div class="flex flex-wrap gap-3 text-xs font-mono text-emeraldgreen/80">
+                            <span class="bg-charcoal px-3 py-1 rounded border border-darkgray">TensorFlow</span>
+                            <span class="bg-charcoal px-3 py-1 rounded border border-darkgray">OpenCV</span>
+                            <span class="bg-charcoal px-3 py-1 rounded border border-darkgray">Python</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-20">
+                <a href="https://github.com/Ahmetkannavi" target="_blank" class="inline-flex items-center px-8 py-3 rounded-md bg-transparent border border-lightgray/20 text-lightgray hover:border-emeraldgreen hover:text-emeraldgreen transition-all duration-300 font-mono text-sm tracking-wide">
+                    Explore Full Archive <i class="fab fa-github ml-3 text-lg"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-charcoal/80 border-t border-darkgray py-6 mt-auto relative z-10">
+        <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500 font-mono">
+            <p>&copy; 2026 Ahmed Kannavi. All rights reserved.</p>
+            <div class="flex space-x-6 mt-4 md:mt-0">
+                <a href="https://github.com/Ahmetkannavi" target="_blank" class="hover:text-neonblue transition-colors"><i class="fab fa-github text-xl"></i></a>
+                <a href="#" class="hover:text-neonblue transition-colors"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="https://instagram.com/ah2tk" target="_blank" class="hover:text-neonblue transition-colors"><i class="fab fa-instagram text-xl"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

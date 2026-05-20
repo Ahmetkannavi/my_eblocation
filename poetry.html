@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Kannavi | Poetry</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Fira+Code&family=Merriweather:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        charcoal: '#0b0c10',
+                        neonblue: '#45f3ff',
+                        emeraldgreen: '#66fcf1',
+                        darkgray: '#1f2833',
+                        lightgray: '#c5c6c7'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        mono: ['Fira Code', 'monospace'],
+                        serif: ['Merriweather', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Minimalist specific scrollbar override */
+        body {
+            scrollbar-width: thin;
+            scrollbar-color: #cbd5e1 #f8fafc;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f8fafc; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body class="bg-[#f8fafc] text-slate-800 font-sans antialiased flex flex-col min-h-screen relative selection:bg-slate-200">
+    <nav class="fixed w-full z-50 bg-[#f8fafc]/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0">
+                    <a href="index.html" class="text-2xl font-bold tracking-wider text-slate-900 font-serif">AK.</a>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="index.html" class="text-slate-500 hover:text-slate-900 transition-colors px-3 py-2 text-sm uppercase tracking-widest font-mono">Home</a>
+                        <a href="about.html" class="text-slate-500 hover:text-slate-900 transition-colors px-3 py-2 text-sm uppercase tracking-widest font-mono">About</a>
+                        <a href="projects.html" class="text-slate-500 hover:text-slate-900 transition-colors px-3 py-2 text-sm uppercase tracking-widest font-mono">Projects</a>
+                        <a href="poetry.html" class="text-slate-900 px-3 py-2 text-sm uppercase tracking-widest font-mono border-b border-slate-900 pb-1">Poetry</a>
+                        <a href="contact.html" class="text-slate-500 hover:text-slate-900 transition-colors px-3 py-2 text-sm uppercase tracking-widest font-mono">Contact</a>
+                    </div>
+                </div>
+                <div class="-mr-2 flex md:hidden">
+                    <button type="button" id="mobile-menu-btn" class="inline-flex items-center justify-center p-2 text-slate-500 hover:text-slate-900 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="md:hidden hidden bg-[#f8fafc] border-b border-slate-200" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 text-center">
+                <a href="index.html" class="text-slate-500 hover:text-slate-900 block px-3 py-2 font-mono uppercase tracking-wider text-sm">Home</a>
+                <a href="about.html" class="text-slate-500 hover:text-slate-900 block px-3 py-2 font-mono uppercase tracking-wider text-sm">About</a>
+                <a href="projects.html" class="text-slate-500 hover:text-slate-900 block px-3 py-2 font-mono uppercase tracking-wider text-sm">Projects</a>
+                <a href="poetry.html" class="text-slate-900 block px-3 py-2 font-mono uppercase tracking-wider text-sm">Poetry</a>
+                <a href="contact.html" class="text-slate-500 hover:text-slate-900 block px-3 py-2 font-mono uppercase tracking-wider text-sm">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="flex-grow pt-32 pb-32 relative px-4 sm:px-6 lg:px-8 flex flex-col items-center">
+        <div class="max-w-4xl mx-auto text-center mt-12 w-full">
+            <h1 class="text-4xl md:text-5xl font-serif text-slate-800 mb-6 font-light tracking-wide leading-tight">Away from the Noise of Technology</h1>
+            <div class="w-12 h-px bg-slate-300 mx-auto mb-6"></div>
+            <p class="text-lg text-slate-500 italic font-serif mb-24">A sanctuary of words, ink, and silence.</p>
+            
+            <div class="space-y-32">
+                <!-- Arabic Section -->
+                <div class="relative pl-8 md:pl-12 border-l border-slate-200 text-left max-w-2xl mx-auto">
+                    <div class="absolute -left-[5px] top-2 w-[9px] h-[9px] bg-[#f8fafc] border border-slate-300 rounded-full"></div>
+                    <span class="block text-xs uppercase tracking-[0.2em] text-slate-400 font-mono mb-6">Arabic Poetry</span>
+                    <h2 class="text-2xl font-serif text-slate-800 mb-8 font-light italic">Coming Soon</h2>
+                    <p class="text-slate-500 font-serif leading-loose text-lg font-light">
+                        ...The ink is still finding its way to the parchment...
+                    </p>
+                </div>
+                
+                <!-- English Section -->
+                <div class="relative pl-8 md:pl-12 border-l border-slate-200 text-left max-w-2xl mx-auto">
+                    <div class="absolute -left-[5px] top-2 w-[9px] h-[9px] bg-[#f8fafc] border border-slate-300 rounded-full"></div>
+                    <span class="block text-xs uppercase tracking-[0.2em] text-slate-400 font-mono mb-6">English Poetry</span>
+                    <h2 class="text-2xl font-serif text-slate-800 mb-8 font-light italic">Coming Soon</h2>
+                    <p class="text-slate-500 font-serif leading-loose text-lg font-light">
+                        ...Words are gracefully weaving themselves into the silence...
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-10 mt-auto text-center">
+        <p class="text-xs text-slate-400 font-mono uppercase tracking-widest">&copy; 2026 Ahmed Kannavi. The Sanctuary.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Navbar scroll effect specific for poetry page minimal style
+        const pNav = document.getElementById('navbar');
+        if (pNav) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 10) {
+                    pNav.classList.add('shadow-sm');
+                } else {
+                    pNav.classList.remove('shadow-sm');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
